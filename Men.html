@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    
+    <style>
+    
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+body{
+    background: linear-gradient(to bottom,#f2f6f3,#a143f4);
+}
+h1{
+    text-align: left;
+    color: rgb(26, 30, 243);
+    padding: 20px;
+    text-shadow:2px 4px rgb(64, 240, 6);
+}
+nav{
+  background-color: rgb(255, 0, 0);
+  display: grid;
+  margin-bottom: 5px;
+  text-align: right;
+  
+  
+}
+nav h1{
+  text-align: left;
+}
+nav ul {
+  list-style-type:none;
+   
+  
+}
+nav ul li{
+  display: inline-block;
+  padding: 20px;
+  text-decoration: none;
+  transition: 0.2s ease-in;
+  font-size: 20px;
+  margin-right: 20px;
+  color: #ffffff;
+  
+
+}
+nav ul li a{
+  text-decoration: none;
+}
+nav ul li:hover{
+  background-color: rgb(0, 0, 0);
+  color: rgb(243, 33, 232);
+  border-radius: 15px;
+}
+.items{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    padding: 30px 20px;
+    grid-column-gap: 2px;
+    grid-row-gap: 5px;
+     
+
+}
+.item img{
+    width: 80%;
+    height: 70%;
+    object-fit:fill;
+    cursor: pointer;
+    transition: 0,3s ease;
+    border-radius: 20px;
+}
+.item img:hover{
+    transform: scale(1.06);
+
+}
+.item h3{
+padding: 5px;
+text-align: center;
+}
+.item h4{
+padding: 5px;
+text-align: center;
+}
+.item button{
+padding: 5px 30px;
+border:none;
+outline:none;
+background-color: rgb(225, 13, 13);
+color: #ffffff;
+cursor: pointer;
+border-radius: 4px;
+font-size: 20px;
+display: block;
+margin: 0 auto;
+transition: 0.2s all;
+
+}
+.item button:hover{
+transform: scale(1.08);
+} 
+
+ p{
+    font-size: 1.8rem;
+    color: rgb(246, 13, 13);
+    padding: 20px;
+    font-family: '', sans-serif;
+     
+}
+.info{
+   margin-left: 10px;
+}
+.info a{
+    color: rgb(213, 29, 241);
+    text-decoration: none;
+    margin-top: 0;
+     
+
+}
+.info a:hover{
+    color: #000000;
+    background-color: #ffffff;
+    transform: 3s ease;
+    border-radius: 5px;
+    
+}
+.text{
+    background-color: #ffffff;
+    text-align: center;
+    width: 700px;
+    height: 350px;
+    border: 0px solid black;
+    margin-left: 250px;
+     border: 10px solid blue;
+    justify-content: space-around;
+
+
+}
+.text p{
+    color: #000000;
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+ 
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Tycollection</h1>
+    <nav>
+         
+        <ul>
+            <a href="New collection.html"><li>New Collection</li></a>
+            <a href="Homepage.html"><li>Homepage</li></a>
+            <a href="Contact.html"><li>Contact Us</li></a>
+            <a href="About.html"><li>About Us</li></a>
+        </ul>
+
+    </nav><br>
+    <div class="info">
+        <div style="color:rgb(255, 0, 0); padding-right: 20px;word-spacing: 20px; margin-top: 20px; font-size: 1.2em; font-family: Geneva, Verdana, sans-serif;">
+          <a href="men.html">Men</a>
+           <a href="women.html">Women</a>
+           <a href="Footwear.html">Footwear</a>
+           <a href="watches.html">Watches</a>
+        </div>
+        <br><br>
+        <h2 style= " color:#ffffff; padding:30px ;text-shadow:2px 2px 5px rgb(255, 0, 0); font-size: 4em; font-family: Impact,', sans-serif;"> <marquee>Find something Classic</marquee></h2>
+    <div class="text">
+    <br><br>
+    <p><marquee direction="up">New collection of Men Clothing<br>
+       All kinds of  wonderful  and classic <br>Shirts and Sweater for men,for <br>affodable and reasonable cost</marquee></p>
+    </div>
+    </div> 
+
+        
+    <section class="items">
+        <div class="item">
+            <img src="hh.JPG">
+            <h4>Long Sleeve</h4>
+            <h3>49$</h3>
+            <button>Order</button>
+
+        </div>
+
+
+        <div class="item">
+            <img src="ee.JPG">
+            <h4>Classical Jacket</h4>
+            <h3>49$</h3>
+            <button>Order</button>
+
+       </div>
+
+        <div class="item">
+            <img src="ty1.jpeg">
+            <h4>Calors T Shirt</h4>
+            <h3>53$</h3>
+            <button>Order</button>
+
+        </div>
+
+        <div class="item">
+            <img src="ty2.jpeg">
+            <h4>Calors T shirt</h4>
+            <h3>45$</h3>
+            <button>Order</button>
+
+        </div>
+
+        <div class="item">
+            <img src="rnb.JPG">
+            <h4>Sport Sneaker</h4>
+            <h3>207$</h3>
+            <button>Order</button>
+
+        </div>
+
+
+        <div class="item">
+            <img src="kk.JPG">
+            <h4>Coperate Shirt</h4>
+            <h3>63$</h3>
+            <button>Order</button>
+
+        </div>
+
+
+        <div class="item">
+            <img src="dd.JPG">
+            <h4>Calors T.Shirt</h4>
+            <h3>17$</h3>
+            <button>Order</button>
+
+        </div>
+
+
+        <div class="item">
+            <img src="go.JPG">
+            <h4>Sneaker</h4>
+            <h3>37$</h3>
+            <button>Order</button>
+
+        </div>
+
+        <div class="item">
+            <img src="class.JPG">
+            <h4>Esay Waer Sneaker</h4>
+            <h3>49$</h3>
+            <button>Order</button>
+
+        </div>
+
+        <div class="item">
+            <img src="wt.JPG">
+            <h4>Long sleeve for Men</h4>
+            <h3>39$</h3>
+            <button>Order</button>
+
+        </div>
+        <div class="item">
+            <img src="tt.JPG">
+            <h4>Sweater</h4>
+            <h3>33$</h3>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="sneaker.JPG">
+            <h4>Classical Sport Sneaker</h4>
+            <h3>51$</h3>
+            <button>Order</button>
+
+        </div>
+        <div class="item">
+            <img src="ww.JPG">
+            <h4>Sneaker</h4>
+            <h3>48$</h3>
+            <button>Order</button>
+
+        </div>
+        <div class="item">
+            <img src="nn.JPG">
+            <h4>Sneaker</h4>
+            <h3>33$</h3>
+            <button>Order</button>
+
+        </div>
+</section>
+</body>
+</html>
