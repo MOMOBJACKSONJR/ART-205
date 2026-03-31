@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Government Day Care School Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- LOGIN PAGE -->
+<div class="login-container" id="loginPage">
+    <h2>Gofamint Daycare Elementary and Junior High School</h2>
+
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+
+    <p class="hint">Demo login: admin / Gofamint</p>
+</div>
+
+<!-- MAIN DASHBOARD -->
+<div class="dashboard" id="dashboard">
+
+    <div class="sidebar">
+        <h3>School Portal</h3>
+
+        <button onclick="showSection('home')">Dashboard</button>
+        <button onclick="showSection('students')">Students</button>
+        <button onclick="showSection('grades')">Grades</button>
+        <button onclick="showSection('announcements')">Announcements</button>
+
+        <button class="logout" onclick="logout()">Logout</button>
+    </div>
+
+    <div class="content">
+
+        <!-- HOME -->
+        <div id="home" class="section">
+            <h2>Dashboard</h2>
+            <p>Welcome to Gofamint Daycare Elementary and Junior High School Student Portal.</p>
+        </div>
+
+        <!-- STUDENTS -->
+        <div id="students" class="section">
+            <h2>Students</h2>
+
+            <div class="card">
+                <p><b>Name:</b> John Doe</p>
+                <p><b>Class:</b> Grade 9</p>
+                <p><b>Age:</b> 15</p>
+            </div>
+
+            <div class="card">
+                <p><b>Name:</b> Mary Smith</p>
+                <p><b>Class:</b> Grade 8</p>
+                <p><b>Age:</b> 14</p>
+            </div>
+        </div>
+
+        <!-- GRADES -->
+        <div id="grades" class="section">
+            <h2>Grades</h2>
+
+            <div class="card">
+                Math: 85% <br>
+                English: 78% <br>
+                Science: 92% <br>
+                Social Studies: 80%
+            </div>
+        </div>
+
+        <!-- ANNOUNCEMENTS -->
+        <div id="announcements" class="section">
+            <h2>Announcements</h2>
+
+            <div class="card">
+                📢 School resumes Monday at 8:00 AM
+            </div>
+
+            <div class="card">
+                📢 Exams start next week
+            </div>
+
+            <div class="card">
+                📢 Parents meeting Friday 2:00 PM
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+function login() {
+    let user = document.getElementById("username").value;
+    let pass = document.getElementById("password").value;
+
+    if(user === "admin" && pass === "1234") {
+        document.getElementById("loginPage").style.display = "none";
+        document.getElementById("dashboard").style.display = "flex";
+    } else {
+        alert("Wrong login! Use admin / 1234");
+    }
+}
+
+function logout() {
+    location.reload();
+}
+
+function showSection(id) {
+    let sections = document.querySelectorAll(".section");
+    sections.forEach(sec => sec.style.display = "none");
+
+    document.getElementById(id).style.display = "block";
+}
+</script>
+
+</body>
+</html>
